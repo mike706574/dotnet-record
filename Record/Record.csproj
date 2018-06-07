@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>Mike.Data</RootNamespace>
+    <PackageId>Mike.Data.Record</PackageId>
+    <Version>0.0.1</Version>
+    <Authors>mike706574</Authors>
+    <Title>Mike.Data.Record</Title>
+    <Description>A friendly heterogeneous dictionary class for .NET.</Description>
+    <PackageSummary>A friendly heterogeneous dictionary class for .NET.</PackageSummary>
+    <PackageProjectUrl>https://github.com/mike706574/dotnet-record</PackageProjectUrl>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageLicenseUrl>https://www.eclipse.org/legal/epl-v10.html</PackageLicenseUrl>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/mike706574/dotnet-record</RepositoryUrl>
+    <Copyright>Copyright 2018</Copyright>
+  </PropertyGroup>
+</Project>
