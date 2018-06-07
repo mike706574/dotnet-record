@@ -11,7 +11,7 @@ namespace Mike.Data
         /// <summary>
         /// Creates an empty reocrd.
         /// </summary>
-        public Record() : base()
+        public Record()
         {
             _metadata = null;
         }
@@ -622,7 +622,8 @@ namespace Mike.Data
         /// or null if this record contains no mapping for the key.
         /// </summary>
         /// <param name="key">A key.</param>
-        /// <typeparam name="T">A type.</typeparam>
+        /// <typeparam name="TK">The key type.</typeparam>
+        /// <typeparam name="TV">The key type.</typeparam>
         /// <returns>Returns the dictionary value to which the specified key is
         /// mapped, or null if this record contains no mapping for the key.
         /// </returns>
@@ -647,7 +648,6 @@ namespace Mike.Data
         /// null if this record contains no mapping for the key.
         /// </summary>
         /// <param name="key">A key.</param>
-        /// <typeparam name="T">A type.</typeparam>
         /// <returns>A record.</returns>
         /// <exception cref="TypeMismatchException">Thrown when the value
         /// mapped to the given key is not a record.</exception>
@@ -707,7 +707,7 @@ namespace Mike.Data
         {
             if (ReferenceEquals(null, obj)) return false;
             if (ReferenceEquals(this, obj)) return true;
-            bool bothRecords = obj.GetType() == this.GetType();
+            bool bothRecords = obj.GetType() == GetType();
             bool isGenericDictionary = IsGenericDictionary(obj);
             return (bothRecords || isGenericDictionary) && Equals((IDictionary<string, object>) obj);
         }

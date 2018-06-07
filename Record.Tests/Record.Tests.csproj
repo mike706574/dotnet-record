@@ -3,7 +3,7 @@
     <TargetFramework>netcoreapp2.1</TargetFramework>
     <IsPackable>false</IsPackable>
     <AssemblyName>Mike.Record.Tests</AssemblyName>
-    <RootNamespace>Mike.Record.Tests</RootNamespace>
+    <RootNamespace>Mike.Data.Tests</RootNamespace>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.7.0" />
